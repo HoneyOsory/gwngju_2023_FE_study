@@ -2,10 +2,92 @@
     <html>
     <head>
         <title>16_HTML_태그소개_레이아웃_설정하기</title>
+        <style>
+            /* 상단영역:hearder */
+            #hearder{
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 5px;
+            }
+            /* 카테고리(네비게이션) 메뉴 영역(nav) */
+            #nav{
+                background-color: #eeeeee;
+                width : 100%;
+                height: 30px;
+                padding: 10px;
+                text-align: center;
+            }
+            /* 본문 내용영역 : section */
+            #section {
+                background-color: aqua;
+                width: 50%;
+                padding: 10px;
+                float: left;
+                /* float : 다음 태그를 열단위로 옆으로 붙이기 기능 */
+            }
+            #section2{
+                background-color: antiquewhite;
+                /* width: 50%; */
+                padding: 10px;
+                float: left;
+            }
+            /* 하단 영역 : footer */
+            #footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 5px;
+                /* clear : 앞쪽  float을 적용받지 않겠다라는 의미 */
+                clear: both;
+            }
 
+        </style>
     </head>
     <body>
+            <!-- 
+                (화면구성)
+                - 상단영역 : hearder
+                - 카테고리 메뉴(네비게이션) : nav
+                - 본문 영역 : section
+                - 하단 영역 : footer
+             -->
+        <!-- 상단 영역(hearder) -->
+        <div id="hearder">
+            <h1>Index Site : 상단영역</h1>
+        </div>
+        <!-- 카테고리(네비게이션:nav) -->
+        <div id="nav">
+            <a href="http://www.daum.net"> 다음</a>
+            <a href="http://www.naver.com">네이버</a>
+            <a href="http://www.google.com">구글</a>
+        </div>
+        <!-- 본문 내용:section -->
+        <div id="section">
+            <h2>공지사항</h2>
+            <ul>
+                <li>[필독] 금일 공지사항</li>
+                <li>[필독] 금일 공지사항</li>
+                <li>[필독] 금일 공지사항</li>
+                <li>[필독] 금일 공지사항</li>
+                <li>[필독] 금일 공지사항</li>
+                <li>[필독] 금일 공지사항</li>
+            </ul>
+        </div>
+        <div id="section2">
+            <h2>질문답변</h2>
+            <ul>
+                <li>[필독] 금일 질문사항</li>
+                <li>[필독] 금일 공지사항</li>
+                <li>[필독] 금일 공지사항</li>
+                <li>[필독] 금일 공지사항</li>
+                <li>[필독] 금일 공지사항</li>
+                <li>[필독] 금일 공지사항</li>
+            </ul>
+        </div>
+        <div id="footer">
+            Copyright c Corp. All rights reserved.
 
-        
+        </div>
     </body>
     </html>

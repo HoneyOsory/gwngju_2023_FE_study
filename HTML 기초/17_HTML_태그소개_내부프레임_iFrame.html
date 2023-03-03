@@ -1,0 +1,24 @@
+<DocType html>
+    <html>
+    <head>
+        <title>17_HTML_태그소개_내부프레임_iFrame</title>
+        
+    </head>
+    <body>
+        <h3>iFrame 사용하기</h3>
+        <!-- 하나의 페이지 안에 또 다른 페이지를 보여주고 
+             싶을때 간헐적으로 사용됨-->
+        <iframe width="100%" height="500px"
+                src="http://www.daum.net"
+                name="iframe_view"
+                ></iframe>
+        <p>
+            <!-- 링크를 클릭하면
+                 해당링크의 내용을 iFrame 영역에 표시하게 -->
+            
+            <a href="./02_HTML_태그소개.html" target="iframe_view">태그소개</a>
+            <a href="http://www.daum.net" target="iframe_view">Daum</a>
+            
+        </p>
+    </body> 
+    </html>

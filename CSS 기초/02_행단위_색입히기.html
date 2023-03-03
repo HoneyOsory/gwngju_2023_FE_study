@@ -1,0 +1,53 @@
+<DocType html>
+    <html>
+    <head>
+        <title>02_css기초_테이블_행단위_색입히기(@)</title>
+        <style>
+            /* table 스타일 */
+            table{
+                border-collapse: collapse;
+                width: 100%;
+            }
+            /* th,td 스타일 */
+            th,td{
+                text-align: center;
+                padding: 8;
+            }
+            /* tr 홀수행(even) 색 입히기 */
+            tr:nth-child(even){
+                background-color: aquamarine;
+            }
+                      
+        </style>
+    </head>
+    <body>
+        <h3>테이블의 행의 짝수/홀수 색상 입히기</h3>
+        <table>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>주소</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>홍길동</td>
+                <td>서울 강남</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>홍길동</td>
+                <td>서울 강남</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>홍길동</td>
+                <td>서울 강남</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>홍길동</td>
+                <td>서울 강남</td>
+            </tr>
+        </table>
+    </body>
+    </html>

@@ -1,0 +1,50 @@
+<DocType html>
+    <html>
+    <head>
+        <title>03_CSS기초_수직_네비게이션(1)</title>
+        <style>
+            /* ul 스타일 */
+            ul {
+                /* 표식 기호 없애기 : none */
+                list-style-type: none;
+                background-color: #f1f1f1;
+                padding: 0;
+                margin: 0;
+                width: 200px;
+            }
+            /* li a 스타일 */
+            li a{
+                color: #000;
+                padding: 10px;
+                text-decoration: none;
+                display: block;
+            }
+            /* li a 태그에 마우스 오버시 처리 스타일 */
+            li a.active{
+                background-color: chocolate;
+                color: white;
+            }
+            li a:hover{
+                background-color: darkslateblue;
+                color: aquamarine;
+            }
+            /* 선그리기 */
+            li {
+                text-align: center;
+                border-bottom: 1px soild #555;
+            }
+            li : :last-child{
+                border-bottom:none;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>수직 네비게이션(메뉴)</h3>
+        <ul>
+            <li><a href="/#" class="active">
+                home</a><br>
+                <a href="#">Naver</a>
+            </li>
+        </ul>
+    </body>
+    </html>
