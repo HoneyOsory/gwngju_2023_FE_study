@@ -1,0 +1,49 @@
+<DocType html>
+<html>
+<head>
+	<title>12_HTML_태그소개_a링크_스타일적용</title>
+	<style>
+		a:link{
+			color:green;
+			background-color:transparent;
+			text-decoration:none;
+		}
+		a:visited{	
+			color:pink;
+			background-color:transparent;
+			text-decoration:none;
+		}
+		a:hover{
+			color:red;
+			background-color:transparent;
+			text-decoration:none;
+		}
+		a:active{
+			color:yellow;
+			background-color:transparent;
+			text-decoration:none;
+		}
+	</style>
+</head>
+<body>
+	<a href="#tip">tip 찾아가기</a>
+	<hr/>
+	<h3>a링크 태그에 스타일 적용해보기</h3>
+	<a href="http://www.daum.net">Daum</a> |
+	<a href="http://www.naver.com">Naver</a> |
+	<a href="./01_HTML_소개.html">HTML 소개</a>
+	
+	<hr/>
+	<h3>링크 페이지를 열기 위한 target 지정하기</h3>
+	<a href="http://www.daum.net" target="_blank">Daum</a> |
+	<!-- _blank : 새로운탭에서 열기 -->
+	<a href="http://www.naver.com" target="_top">Naver</a> |
+	<!-- _top : 현재창에서 열기-->
+	<a href="./01_HTML_소개.html" target="_self">HTML 소개</a>
+	<!-- _self : 동일한 프레임에서 열기(현재창과 유사)-->
+	
+	<hr/>
+	<h3 id="tip">a 링크를 클릭하면 특정 위치로 이동하기(책갈피)</h3>
+	
+</body>
+</html>

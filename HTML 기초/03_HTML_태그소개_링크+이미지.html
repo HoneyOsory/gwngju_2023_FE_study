@@ -1,0 +1,56 @@
+<DocType html>
+<html>
+<head>
+	<title>::: 03_HTML_태그소개_링크+이미지 :::</title>
+</head>
+<body>
+	<h3>a(링크) 태그</h3>
+	<!-- a 태그
+		* 링크를 설정하는 태그 : 설정된 링크로 이동함.
+		* 클릭을 할 수 있도록 도와주는 태그 중 한가지
+		* a태그는 행 전체를 차지하지 않으며, 옆으로 작성됨. 줄바꿈을 원하면<br/>
+		* href : 이동하고자하는 URL 또는 페이지(문서) 위치 정의
+		* . : 현재 위치의 폴더를 지정.(상대 경로)
+	
+	-->
+	<a href="http://www.naver.com">Naver</a><br/>
+	<a href="http://www.daum.net">Daum</a><br/>
+	<a href="./02_HTML_태그소개.html">02_HTML_0태그소개로_가기</a>
+	
+	<hr/>
+	
+	<!-- 이미지 넣기
+		* img 태그는 시작과 끝을 동시에 적용하는 태그
+		* src 속성 : 이미지 위치 지정
+		* weight : 가로길이 / height : 세로길이
+		* title : 이미지가 있을때의 text
+		* alt : 이미지가 없을때의 text
+	-->
+	
+	<h3>img(이미지) 넣기</h3>
+	<img src="http://image.yes24.com/blogimage/blog/c
+			/y/cy_hong/18620874_1738324713132232_
+			7648562249134142126_o.jpg" 
+		width="100" height="100" 
+		title="이미지 설명하기(마우스 올리면 나옵니다)"
+		alt = "이미지가 없어요~!!"
+			/>
+	<a href="./02_HTML_태그소개.html">
+		<img src="./고양이.jpg"
+			width="100" height="100"
+		/>
+	</a>
+	
+	<hr/>
+	
+	<pre>
+		pre 태그는,
+		자동 줄바꿈도 됩니다.
+		태그 안에 또다른 태그 사용도 가능합니다.
+		(a태그 처럼)
+		<a href="http://www.daum.net">Daum</a>으로 갈수도 있어요.
+	</pre>
+
+	
+</body>
+</html>

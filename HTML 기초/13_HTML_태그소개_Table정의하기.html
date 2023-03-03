@@ -1,0 +1,151 @@
+<DocType html>
+<html>
+<head>
+	<title>13_HTML_태그소개_Table정의하기</title>
+	<!-- 
+		스타일 바깥쪽의 주석
+	 -->
+	<style>
+		/* 스타일 안쪽의 주석 */
+		table, td {
+			/* border : 테두리 라인설정 */
+			border : 1px solid rgb(0, 0, 0);
+			/* collapse : 두줄 라인을 한줄로 스타이 적용하기 */
+			border-collapse: collapse;
+		}
+		/* td에 대해서만 스타일 적용하기(td:열 tr:행) */
+		td,th{
+			/* 테두리 안쪽 여백 주기 : 15px로 */
+			padding : 15px;
+			/* 텍스트 중앙 정렬하기 */
+			text-align:center;
+		}
+		
+	</style>
+</head>
+<body>
+	<h3>회원 정보 목록 게시물</h3>
+	<table border = "1", width="100%">
+		<tr>
+			<th>아이디</th> 
+			<th>이름</th> 
+			<th>패스워드</th>
+		</tr>
+		<tr>
+			<td>a001</td> 
+			<td>홍길동</td> 
+			<td>pwaoo1</td>
+		</tr>
+		<tr>
+			<td>b001</td> 
+			<td>홍길동</td> 
+			<td>pwaoo1</td>
+		</tr>
+		<tr>
+			<td>c001</td> 
+			<td>홍길동</td> 
+			<td>pwaoo1</td>
+		</tr>
+		
+		<!-- 여러개의 열(컬럼,td) 합치기 
+			* colspan 
+			- td(컬럼) 합치기
+			- 전체 td의 갯수 중에
+			합치고자 하는 갯수 정의
+
+		-->
+
+		<tr>
+			<td>b001</td> 
+			<td colspan="2">홍길동</td> 
+		</tr>
+		<tr>
+			<td colspan="2">c001</td> 
+			<td>pwaoo1</td>
+		</tr>
+		
+		<tr>
+			<td colspan="3">c001</td> 
+			
+		</tr>
+
+		<!-- 여러 개의 행(tr) 합치기 -->
+		<tr>
+			<td rowspan="3">a001</td> 
+			<td>홍길동</td> 
+			<td>pwaoo1</td>
+		</tr>
+		<tr>
+			<!-- <td>b001</td>  -->
+			<td>홍길동</td> 
+			<td>pwaoo1</td>
+		</tr>
+		<tr>
+			<!-- <td>c001</td>  -->
+			<td>홍길동</td> 
+			<td>pwaoo1</td>
+		</tr>
+		
+		<tr>
+			<td>a001</td> 
+			<td rowspan="3">홍길동</td> 
+			<td>pwaoo1</td>
+		</tr>
+		<tr>
+			<td>b001</td> 
+			<!-- <td>홍길동</td>  -->
+			<td>pwaoo1</td>
+		</tr>
+		<tr>
+			<td>c001</td> 
+			<!-- <td>홍길동</td>  -->
+			<td>pwaoo1</td>
+		</tr>
+		
+		<tr>
+			<td>a001</td> 
+			<td>홍길동</td> 
+			<td rowspan="3">pwaoo1</td>
+		</tr>
+		<tr>
+			<td>b001</td> 
+			<td>홍길동</td> 
+			<!-- <td>pwaoo1</td> -->
+		</tr>
+		<tr>
+			<td>c001</td> 
+			<td>홍길동</td> 
+			<!-- <td>pwaoo1</td> -->
+		</tr>
+	</table>
+	<!-- 테이블 제목(캡션) 달기 -->
+	<hr/>
+	<table border="1">
+		<!-- 테이블 제목 -->
+		<caption>테이블 제목(caption)</caption>
+		<tr>
+			<th>아이디</th>
+			<th>이름</th>
+			<th>주소</th>
+		</tr>
+		<tr>
+			<td>a001</td>
+			<td>홍길동</td>
+			<td>소천동</td>
+		</tr>
+		<tr>
+			<td>b001</td>
+			<td>홍길동</td>
+			<td>소천동</td>
+		</tr>
+		<tr>
+			<td>c001</td>
+			<td>홍길동</td>
+			<td>소천동</td>
+		</tr>
+
+
+	</table>
+
+</body>
+</html>
