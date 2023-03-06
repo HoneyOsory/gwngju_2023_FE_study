@@ -1,0 +1,27 @@
+<DocType html>
+    <html>
+    <head>
+        <title>01_javascript</title>
+        <script type="text/javascript">
+            function goMessage(mode){
+                alert('함수가 호출되었습니다');
+                // id가 p1인 태그 찾기
+                //document.getElementById("p1").innerHTML="임의의 값 넣기1";
+                document.getElementById(mode).innerHTML="임의의 값 넣기2" + mode;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>01_javascript</h3>
+        <p id="p1">
+            이곳에 자바스크립트 함수를 이용해서 내용 입력1
+        </p>
+        <p id="p2">
+            이곳에 자바스크립트 함수를 이용해서 내용 입력2
+        </p>
+        <!--아래 버튼을 클릭하며 goMessage() 함수호출
+            : 호출 후에 안내창을 통헤 "호출되었습니다" 띄우기 -->
+        <button type="button" onclick=goMessage()>p1 입력</button>
+        <button type="button" onclick=goMessage()>p2 입력</button>
+    </body>
+    </html>

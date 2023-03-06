@@ -1,0 +1,31 @@
+<DocType html>
+    <html>
+    <head>
+        <title>03_javascript</title>
+        
+    </head>
+    <body>
+        <h3>자바스크립트로 텍스트 작성하기</h3>
+        <!-- 자바스크립트로 작성하기 -->
+        <!-- write() : 텍스트 작성, 태그 적용, 연산가능 -->
+        <script type="text/javascript">
+            document.write("내용을 작성합니다.");
+            document.write("<br> 줄바꿈 되나?");
+            document.write('<br>');
+            document.write(10+20);
+            document.write("<br>");
+            document.write("<input type='text' value='test'>");
+        </script>
+        <!-- onclick 이벤트를 통해 내용 작성하기 -->
+        <button onclick="document.write('내용 작성!!')">클릭!!</button>
+        
+        <p id="p1">
+            여기에 innerHTML 내용 넣기
+        </p>
+        
+        <script type="text/javascript">
+            document.getElementById("p1").innerHTML=10*10;
+
+        </script>
+    </body>
+    </html>

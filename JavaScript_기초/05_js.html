@@ -1,0 +1,23 @@
+<DocType html>
+    <html>
+    <head>
+        <title>05_javascript</title>
+        <script type="text/javascript">
+           var num = 0;
+           function goAddone(){
+                //num = num+1;
+                num++;
+                msg = "현재 count :";
+                document.getElementById("p1" ).innerHTML=msg + num;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>버튼을 클릭하면 1씩 증가되는 문서 만들기</h3>
+        <p id="p1">
+            1씩 증가된 값은 이곳에 출력됨
+        </p>
+        <!-- <button type="button" onclick="pClick">클릭</button> -->
+        <button onclick="goAddone()">클릭</button>
+    </body>
+    </html>

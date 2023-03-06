@@ -1,0 +1,32 @@
+<DocType html>
+    <html>
+    <head>
+        <title>04_js</title>
+        <script type="text/javascript" >
+            function goMath() {
+                x = 10;
+                y = 20;
+                sum = x*y;
+                document.getElementById("p1").innerHTML=sum;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>자바스크립트 변수 처리하기</h3>
+        <p id="p1">
+
+        </p>
+        <script type="text/javascript">
+            //변수 선언 및 정의하기
+            var x = 10;
+            var y = 20;
+            var sum = x+y;
+            var multiply = x*y;
+            //p태그에 아이닥 p1인 곳의 위의 sum값을 출력하기
+            // document.write(sum) < -X
+            document.getElementById("p1").innerHTML = sum;
+        </script>
+        <button type="button" onclick="goMath()">출력</button>
+        <!-- 버튼을 이용해서 버튼을 클릭하면 p1 아이디의 p태그에 x와 y의 값을 곱한 값이 출력되게. -->
+    </body>
+    </html> 

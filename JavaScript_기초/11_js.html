@@ -1,0 +1,35 @@
+<DocType html>
+    <html>
+    <head>
+        <title>11_javastript</title>
+        <script type="text/javascript">
+            function goReplace(){
+                var p1 = document.getElementById("p1");
+                // p1 태그에 있는 텍스트 내용 가지고 오기
+                var p1_str = p1.innerHTML;
+                // "파이썬"을 "자바"로 치환하기
+                var p1_change=p1_str.replace("파이썬","자바");
+                p1.innerHTML=p1_change;
+            }
+            function goSplit(){
+                var str = "a b c d e f";
+                // 문자열의 구분자로 사용할 수 있는 패턴 찾기
+                var str_array = str.split(" ");
+                var p1 = document.getElementById("p1");
+                p1.innerHTML = str_array[1];
+
+            }
+            // 화면 초기화(새로고침)
+            function goReload(){
+                location.reload();
+            }
+        </script>
+    </head>
+    <body>
+        <h3>문자 치환 함수</h3>
+        <p id="p1">안녕하세요 "파이썬"입니다</p>
+        <button onclick="goReplace()">치환하기</button>
+        <button onclick="goSplit()">치환하기</button>
+        <button onclick="goReload()">화면초기화</button>
+    </body>
+    </html>

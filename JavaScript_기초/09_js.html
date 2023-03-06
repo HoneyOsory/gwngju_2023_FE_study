@@ -1,0 +1,38 @@
+<DocType html>
+    <html>
+    <head>
+        <title>sample</title>
+        <script type="text/javascript">
+            //문자열의 길이 확인하기
+            function goLength(){
+                var v = "abcd efg hijk 홍길동";
+                var len = v.length
+                document.getElementById("p1").innerHTML=len;
+            }
+            function goIndexOf(){
+                var p1_str = document.getElementById("p1").innerHTML;
+                // alert(p1_str);
+                // 특정 문자의 위치 찾기 : 시작 위치값
+                // 0부터 시작
+                var idx = p1_str.indexOf("locate");
+                document.getElementById("p2").innerHTML=idx;
+            }
+            function goLastIndexOf(){
+                var p1_str = document.getElementById("p1").innerHTML;
+                // alert(p1_str);
+                // 특정 문자의 위치 찾기 : 시작 위치값
+                // 0부터 시작
+                var idx = p1_str.lastIndexOf("locate");
+                document.getElementById("p3").innerHTML=idx;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>문자열 관련 함수 및 속성들</h3>
+        <p id="p1">please, locate where 'locate'</p>
+        <p id="p2">찾은 문자열의 위치값 출력</p>
+        <button onclick="goLength()">문자열 길이 확인하기</button>
+        <button onclick="goIndexOf()">문자열 찾기</button>
+        <button onclick="goLastIndexOf()">마지막 문자열 찾기</button>
+    </body>
+    </html>

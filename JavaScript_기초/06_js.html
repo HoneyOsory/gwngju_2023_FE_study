@@ -1,0 +1,22 @@
+<DocType html>
+    <html>
+    <head>
+        <title>06_js</title>
+        <script type="text/javascript">
+           var num = 0;
+           var sum = 0;
+           function accrue(){
+            num=num+1;
+            sum = sum + num;
+            document.getElementById('p1').innerHTML=sum;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>버튼을 클릭할 때 마다, 누적시키는 프로그램 작성</h3>
+        <p id="p1">
+            
+        </p>
+        <button onclick="accrue()">누적</button>
+    </body>
+    </html>

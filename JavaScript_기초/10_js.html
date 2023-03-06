@@ -1,0 +1,43 @@
+<DocType html>
+    <html>
+    <head>
+        <title>10_javascript</title>
+        <script type="text/javascript">
+            // 문자열의 특정 위치의 문자 추출하기
+            function goSlice(){
+                var str = "Apple, Banana, Kiwi";
+                // 첫번째 : 찾을 시작 위치값(0부터 시작
+                // 두번째 : 끝값 -1까지의 위치값
+                var cut_str = str.slice(7,13);
+                var p1 = document.getElementById("p1");
+                p1.innerHTML=cut_str;
+            }
+            function goSubstring(){
+                var str = "Apple, Banana, Kiwi";
+                // 첫번째 : 찾을 시작 위치값(0부터 시작
+                // 두번째 : 끝값 -1까지의 위치값
+                var cut_str = str.substring(7,13);
+                var p1 = document.getElementById("p1");
+                p1.innerHTML=cut_str;
+            }
+            function goSubstr(){
+                var str = "Apple, Banana, Kiwi";
+                // 첫번째 : 찾을 시작 위치값(0부터 시작
+                // 두번째 : 시작 위치 부터의 갯수
+                var cut_str = str.substr(7,6);
+                var p1 = document.getElementById("p1");
+                p1.innerHTML=cut_str;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>문자열 함수<br>
+            "Apple, Banana, Kiwi"
+        </h3>
+        <p id="p1"></p>
+        <button onclick="goSlice()">클릭</button>
+        <button onclick="goSubstring()">클릭</button>
+        <button onclick="goSubstr()">클릭</button>
+
+    </body>
+    </html>

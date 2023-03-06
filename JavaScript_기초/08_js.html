@@ -1,0 +1,30 @@
+<DocType html>
+    <html>
+    <head>
+        <title>08_javascript</title>
+        <script type="text/javascript">
+            function goClick(){
+                //객체 생성하기
+                var member = {mem_id : "a001",
+                              mem_pw : "adsf111",
+                              mem_age : 25,
+                              mem_addr : "광주 광산구"}
+                tag_text="<table border='1'>";
+                tag_text +="<tr><th>아이디</th>";
+                tag_text += "<th>패스워드</th><tr>";
+                tag_text += "<tr><td>"+member.mem_id+"</td><tr>";
+                tag_text += "<td>"+member.mem_pw+"</td><tr>";
+                tag_text += "</table>";
+                document.getElementById("p1").innerHTML=tag_text;
+            }
+
+        </script>
+    </head>
+    <body>
+        <h3>객체 처리하기</h3>
+        <p id="p1">
+
+        </p>
+        <button onclick="goClick()">클릭</button>
+    </body>
+    </html>
