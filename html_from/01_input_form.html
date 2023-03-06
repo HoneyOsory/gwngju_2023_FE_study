@@ -1,7 +1,7 @@
 <DocType html>
     <html>
     <head>
-        <title>01_입력폼</title>
+        <title> 01_입력폼 </title>
         <script type="text/javascript">
             /* 함수생성하기 */
             function goView(){
@@ -21,13 +21,24 @@
          <!-- Request : 요청한 값
               Respawn : 요청받아서 반환하는 값-->
         <h3>회원 로그인: text 입력</h3>
-    <form action="http://www.daum.net" method="get"> <!-- a태그와 href와 유사한 기능 : action -->
+        <!-- a태그와 href와 유사한 기능 : action -->
+        <!--onInput() : 입력되는 값이 있는 경우...자동으로 호출되는 함수
+            parseInt() : 모든 입력값은 문자열입니다. 따라서 연산을 할 경우 int로 형변환 해야합니다. -->
+    <form action="http://www.daum.net" method="get" 
+            onInput="x.value=parseInt(a.value)+parseInt(b.value)"> 
         <!--method : 값을 전달하나는 방식 (get 과 post)
             get : url 뒤에 ?표를 이용해서 전송(보임)
             post : 내부적으로 표준규약에 의해 전송(안보임)-->
-        아이디 : <input type="text" name="id" value="id">
+        아이디 : <input type="text" name="id" value="" size="50"  maxlength="10"><br>
+        아이디 : <input type="text" name="id" value="asdf" size="50" disabled >
+        <!--size: 텍스트 박스의 너비를 지정-->
+        <!--readonly : 읽기 전용으로 만들기, 입력불가
+                     : 수정페이지에서 수정하지 않아도 되는 항목에 사용-->
+        <!-- disabled : 비활성화 시키기 -->
+        <!-- maxlegth : 입력값의 길이 제한 -->
         <br>
-        패스워드 : <input type="text" name="pw" value="pw">
+        <!-- 패스워드 타입은 별도로 지정되어 있음 -->
+        패스워드 : <input type="password" name="pw" value="">
         <br>
         <hr/>
         <!-- radio 버튼 처리
@@ -35,8 +46,9 @@
             - 한개만 선택 가능한 입력방식
         -->
         <input type="radio" name="gender" value="m"> 남자<br/>
-        <input type="radio" name="gender" value="f"> 여자<br>
+        <input type="radio" name="gender" value="f" checked> 여자<br>
         <input type="radio" name="gender" value="o"> 기타<br>
+        <!--checked : default 값으로 선택되게 함 -->
         <hr/>
         <!-- select(Drop Down lsit 라고도 합니다.) 처리 -->
         차종 선택 :
@@ -63,6 +75,17 @@
             <option value="Chrome"></option>
             <option value="Firefox"></option>
         </datalist>
+        <hr>
+        <!--output(출력) 태그 처리-->  <!--25,26,28줄 -->
+        0
+        <input type="range" id="a" name="a" value="50">
+        100
+        +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+
+    
         <!-- <button>전송</button>         -->
         <hr>
         <input type="submit" value="저장">
@@ -71,7 +94,7 @@
         <!--alter()함수 : 안내창(팝업창)을 보여주는 자바스크립트 함수 -->
         <button type="button" onclick="alert('마우스 클릭됐습니다!')">저장하기</button>
         <button type="button" onclick="goView()">자바스크립트 함수호출</button>
-
     </form> 
     </body>
     </html>
+    <!--on~: event함수 어떤 일이 일어나기까지 기다리는 함수. -->
