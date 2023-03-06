@@ -1,7 +1,13 @@
 <DocType html>
     <html>
     <head>
-        <title>sample</title>
+        <title>01_입력폼</title>
+        <script type="text/javascript">
+            /* 함수생성하기 */
+            function goView(){
+                alert("함수가 호출되었습니다.");
+            }
+        </script>
     </head>
     <body>
         <!-- 
@@ -48,12 +54,24 @@
         <textarea name="contens" rows="10" cols="30">
             여기에 입력해 주세요!!
         </textarea>
+        <hr>
+        <!--datalist 속성-->
+        <!--select 태그와 유사한 기능-->
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+        </datalist>
         <!-- <button>전송</button>         -->
         <hr>
         <input type="submit" value="저장">
         <!--button 태그는 input type의 submit과 유사하게 사용됨
             다만, 자바스크립트를 통해 속성들을 처리해야함 -->
-        <button type="button">저장하기</button>
+        <!--alter()함수 : 안내창(팝업창)을 보여주는 자바스크립트 함수 -->
+        <button type="button" onclick="alert('마우스 클릭됐습니다!')">저장하기</button>
+        <button type="button" onclick="goView()">자바스크립트 함수호출</button>
+
     </form> 
     </body>
     </html>
