@@ -1,0 +1,59 @@
+<DocType html>
+    <html>
+    <head>
+        <title>sample</title>
+    </head>
+    <body>
+        <!-- 
+            [입력 폼]
+            = form 태그 내에서 정의
+            - 입력을 담당하는 태그 : input
+            - 입력 유형 : text, radio, checkbox, select, textarea
+            - 입력 처리방법 : button(버튼)을 통해 submit(서버로 전송)
+            - 서버로 전송되는 데이터는 form 태그 내에 있어야 합니다.
+         -->
+         <!-- Request : 요청한 값
+              Respawn : 요청받아서 반환하는 값-->
+        <h3>회원 로그인: text 입력</h3>
+    <form action="http://www.daum.net" method="get"> <!-- a태그와 href와 유사한 기능 : action -->
+        <!--method : 값을 전달하나는 방식 (get 과 post)
+            get : url 뒤에 ?표를 이용해서 전송(보임)
+            post : 내부적으로 표준규약에 의해 전송(안보임)-->
+        아이디 : <input type="text" name="id" value="id">
+        <br>
+        패스워드 : <input type="text" name="pw" value="pw">
+        <br>
+        <hr/>
+        <!-- radio 버튼 처리
+            radio 특징
+            - 한개만 선택 가능한 입력방식
+        -->
+        <input type="radio" name="gender" value="m"> 남자<br/>
+        <input type="radio" name="gender" value="f"> 여자<br>
+        <input type="radio" name="gender" value="o"> 기타<br>
+        <hr/>
+        <!-- select(Drop Down lsit 라고도 합니다.) 처리 -->
+        차종 선택 :
+        <select name="cars">
+            <option value="volvo">volvo</option>
+            <option value="saab">saab</option>
+            <option value="audi" selected>audi</option>
+            <!-- selected : 옵션 중에 맨 처음 보여주고 싶은 항목을 지정할 때 -->
+        </select> 
+        <hr>
+        <!-- textarea : 여러 줄 문장을 입력하고자 할때 사용 -->
+        <!--rows : 너비
+            cols : 높이 -->
+        내용 :
+        <textarea name="contens" rows="10" cols="30">
+            여기에 입력해 주세요!!
+        </textarea>
+        <!-- <button>전송</button>         -->
+        <hr>
+        <input type="submit" value="저장">
+        <!--button 태그는 input type의 submit과 유사하게 사용됨
+            다만, 자바스크립트를 통해 속성들을 처리해야함 -->
+        <button type="button">저장하기</button>
+    </form> 
+    </body>
+    </html>
