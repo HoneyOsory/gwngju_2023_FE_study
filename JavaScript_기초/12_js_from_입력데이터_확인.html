@@ -8,23 +8,23 @@
             function goLogin(){
                 var fm=document.getElementById("fm");
                 // 회원 아이디 입력 여부 확인하기
-                // if(fm.mem_id.value==""){
-                //     alert("아이디를 입력해 주세요");
-                //     //focus() 해당 입력 박스로 커서를 이동함
-                //     fm.mem_id.focus();
-                //     return;}
-                // if(fm.mem_pw.value==""){
-                //     alert("패스워드를 입력해 주세요");
-                //     fm.mem_pw.focus();
-                //     return;
+                if(fm.mem_id.value==""){
+                    alert("아이디를 입력해 주세요");
+                    //focus() 해당 입력 박스로 커서를 이동함
+                    fm.mem_id.focus();
+                    return;}
+                if(fm.mem_pw.value==""){
+                    alert("패스워드를 입력해 주세요");
+                    fm.mem_pw.focus();
+                    return;
 
-                // }
+                }
                 alret(fm.mem_id.vlaue);
                 alret(fm.mem_pw.vlaue);
                 // 이동할 페이지 정의(즉, 요청페이지 정의)
-                // fm.action = "./03_javascript.html";
+                fm.action = "./03_javascript.html";
                 // 전송 처리
-                // fm.submit();
+                fm.submit();
              }
 
         </script>
@@ -41,9 +41,9 @@
             <br>
             패스워드 : <input type="password" name="mem_pw" id="mem_pw" placeholder="아이디를 입력해주세요!" required>
 
+            <hr>
+            <button onclick="goLogin()">클릭</button>
+            <input type="submit" value="로그인(required)">
         </form>
-    <hr>
-        <button onclick="goLogin()">클릭</button>
-        <input type="submit" value="로그인(required)">
     </body>
     </html>
